@@ -34,10 +34,10 @@ public class User implements UserDetails {
     @Column(nullable = false)
     private Role role;
 
-    @Column(nullable = false)
+    @Column(name = "account_non_locked", nullable = false)
     private boolean isAccountNonLocked = true;
 
-    @Column(nullable = false)
+    @Column(name = "failed_attempts", nullable = false)
     private int failedAttempts = 0;
 
     @Override
